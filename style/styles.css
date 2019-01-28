@@ -1,0 +1,220 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+body{
+    background-color: #181818;
+    color: #b3b3b3;
+    margin: 0;
+    padding: 1px;
+    font-size: 13px;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+
+
+/* HEADER */
+header{
+    height: 45px;
+    position: fixed;
+    margin-left: 260px;
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+}
+header>*{
+    height: 100%;
+    display: inline-block;
+    float: left;
+    position: absolute;
+    top: 9.5px;
+    vertical-align: middle;
+}
+header .nav .arrow{
+    margin: auto 10px;
+}
+
+header input[type=search] {
+    //-moz-appearance: none;
+    //-webkit-appearance: none;
+     border-radius: 10px;
+}
+header .profile{
+    height: 100%;
+    right: 300px;
+}
+header .scroll_menu{
+    position: relative;
+    bottom: 7.5px;
+}
+header .profile>*{
+    display: inline-block;
+}
+header .profile .profile_picture{
+    width: 30px;
+    height: 30px;
+    background:url("https://via.placeholder.com/30/09f/fff.png") center center no-repeat;
+    border-radius: 20px;
+    margin: 0 auto;
+    //top: 9.5px;
+    position: relative;
+}
+header .profile .name{
+    color: white;
+    font-weight: 600;
+    padding-right: 20px;
+    position: relative;
+    bottom: 7.5px;
+}
+
+
+
+
+
+/* TABLE */
+table{
+    border-top: 0.25px solid #b3b3b3;
+    //border-color: white;
+}
+table th, table tr{
+    width: 100%;
+}
+
+
+/* SIDEBAR-LEFT */
+body .sidebar-right{
+    background-color: #131313;
+    width: 300px;
+    height: 100vh;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+body .sidebar-left{
+    background-color: #131313;
+    width: 300px;
+    height: 100vh;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+body .sidebar-left ul{
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 13px;
+    margin-top: 25px;
+}
+body .sidebar-left ul.playlists {
+    font-size: 12px;
+}
+
+
+body .sidebar-left ul>span{
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 18px;
+}
+
+body .sidebar-left ul li{
+    line-height: 30px;
+
+}
+body .sidebar-left ul li:hover{
+    color: white;
+    cursor: default;
+}
+body .sidebar-left ul.accueil li{
+    font-weight: 600;
+}
+body .sidebar-left ul.bibliotheque li{
+    line-height: 32px;
+}
+body .sidebar-left ul.playlists li{
+    line-height: 32px;
+}
+body .sidebar-left .photo img{
+    border-radius: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+body .content img{
+    width: 75%;
+}
+body .content #decompte{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    top: 30%;
+    font-size: 42pt;
+    width: 700px;
+}
+
+/* CONTAINER */
+.container{
+    margin-top: 100px;
+    float: left;
+    margin-left: 30px;
+}
+.container>*{
+    //margin-left: 20px;
+}
+.container h1{
+    font-family: 'Montserrat bold', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.container h1, .container h2{
+    color: white;
+}
+
+/* Footer */
+.grad{
+    background-image: linear-gradient(rgba(24,24,24,0), #303030);
+    width: 100%;
+    height: 175px;
+    bottom: 0px;
+    position: fixed;
+}
+.grad div.sponsors{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    float: right;
+    width: 70%;
+}
+.grad div.sponsors>div{
+    margin: 10px;
+
+}
+.grad div.sponsors>div>img{
+        width: 100px;
+}
+.grad div.sponsors>div>img:hover {
+    -webkit-filter: brightness(1.3) drop-shadow(0px 0px 20px #ffffff);
+    filter: brightness(1.3) drop-shadow(0px 0px 20px #ffffff);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=7, Color='$color')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=7, Color='$color')";
+}
+
+.grad div.featuring span.liste{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.grad div.featuring{
+    margin-left: 10px;
+    float: left;
+}
+.grad div.featuring ul li{
+    list-style-type: none;
+    line-height: 1.8;
+}
+.grad div.featuring ul li b{
+    font-weight: 600;
+    text-transform: uppercase;
+}
